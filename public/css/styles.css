@@ -2,16 +2,18 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #616161;
+    background-color: rgb(26,26,26);
 }
 
 .container {
-    width: 80%;
-    margin: 0 auto;
+    width: 400px;
     padding: 20px;
-    background-color: #fff;
+    background-color: rgb(26, 26, 26);
+    border: 2px solid white;
+    border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+    text-align: center;
+  }
 
 form {
     margin-bottom: 20px;
@@ -30,17 +32,6 @@ input, select, button {
     border-radius: 4px;
 }
 
-button {
-    background-color: #a72828;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #5f0000;
-}
-
 ul {
     list-style-type: none;
     padding: 0;
@@ -50,3 +41,37 @@ li {
     padding: 10px;
     border-bottom: 1px solid #ccc;
 }
+
+h1, h2, h3 {
+    color: white;
+}
+
+input {
+    display: block;
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px auto;
+    border: 1px solid white;
+    background-color: rgb(26, 26, 26);
+    color: white;
+    border-radius: 5px;
+  }
+  
+  button {
+    background-color: rgb(26, 26, 26);
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  button:hover {
+    background-color: white;
+    color: rgb(26, 26, 26);
+  }
+
+  .something {
+    color: white;
+  }

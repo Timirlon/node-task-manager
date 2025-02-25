@@ -45,7 +45,7 @@
             <h3>Users</h3>
             <ul id="userList">
                 <% users.forEach(user => { %>
-                    <li>
+                    <li class="something">
                         <%= user.name %> (<%= user.email %>) - <%= user.role %>
                         <button onclick="editUser('<%= user._id %>')">Edit</button>
                         <button onclick="deleteUser('<%= user._id %>')">Delete</button>
@@ -58,7 +58,7 @@
         <h3>Tasks</h3>
         <ul id="taskList">
             <% tasks.forEach(task => { %>
-                <li>
+                <li class="something">
                     <%= task.description %> - <%= task.completed ? 'Completed' : 'Pending' %>
                     <br>
                     <small>Owner: <%= task.owner ? task.owner.email : 'Unknown' %></small>
@@ -73,8 +73,8 @@
         <!-- Add Task Form -->
         <h3>Add Task</h3>
 <form id="addTaskForm">
-    <label for="description">Description:</label>
-    <input type="text" id="description" name="description" required>
+    <label for="description" style="color:white">Description:</label>
+    <input type="text" id="description" name="description" required placeholder="Enter task">
 
     <label for="status">Status:</label>
     <select id="status" name="status" required>
