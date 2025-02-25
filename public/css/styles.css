@@ -32,6 +32,10 @@ input, select, button {
     border-radius: 4px;
 }
 
+input::placeholder {
+    color: gray;
+}
+
 ul {
     list-style-type: none;
     padding: 0;
